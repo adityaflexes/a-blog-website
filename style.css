@@ -40,8 +40,14 @@ header {
 main {
     margin-top: 5rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: .5rem;
+}
+
+@media (min-width: 1440px) {
+    main{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .blog-card {
